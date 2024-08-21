@@ -1,0 +1,230 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e7ff; /* Light green background */
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0e736e; /* green background */
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0; /* Increase padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  border-bottom: 4px solid #219999; 
+}
+
+h3 {
+  margin-left: 20px;
+  color: #1f2937; /* Darker text color */
+  font-weight: 500;
+  font: size 24px; ;
+}
+
+button {
+  background-color: #0c747c; /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(19, 116, 120, 0.2); /* Box shadow */
+}
+
+button:hover {
+  background-color: #447b5c;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+#searchInput {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #93c5fd; 
+  border-radius: 8px; /* Rounded input */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: #0d8b7e; /* Darker blue border on focus */
+  outline: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box shadow */
+  margin: 8% auto;
+  padding: 25px;
+  max-width: 550px;
+  text-align: center;
+}
+
+.close {
+  color: #999;
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #333; /* Darker color on hover */
+}
+
+.footer-distributed {
+  background-color: #0e736e; /* green background */
+  text-align: center;
+  font-size: 14px;
+  padding: 40px 0;
+  color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
+  border-top: 4px solid #219999; /* green top border */
+}
+
+ul#contactList {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+li.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  margin: 12px 0;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li.contact-item:hover {
+  transform: translateY(-4px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.contact-avatar {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Circular avatar */
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.contact-avatar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-details {
+  flex: 1;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.contact-name {
+  font-size: 1.4em; 
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #1f2937; 
+}
+
+.contact-email, .contact-phone {
+  margin: 6px 0;
+  font-size: 1em;
+  color: #4b5563; 
+}
+
+.contact-actions {
+  display: flex;
+  gap: 10px; 
+}
+
+.contact-actions button {
+  background-color: #278092; 
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-actions button:hover {
+  background-color: #13595b; 
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  margin: 8% auto;
+  padding: 25px;
+  max-width: 550px;
+  text-align: center;
+}
+
+.close {
+  color: #999;
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #333; 
+}
+
+.contact-avatar {
+  flex-shrink: 0;
+  width: 90px;
+  height: 85px;
+  border-radius: 90%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.contact-avatar img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
