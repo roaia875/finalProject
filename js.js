@@ -1,3 +1,4 @@
+'use strict'
 document.addEventListener('DOMContentLoaded', () => {
   const initialContacts = [
     { name: "Roaia Habashi", email: "ro2ya.habashi@gmail.com", phone: "0525127600", age: "19", address: "Haifa", image: "images/roaia.jpg" },
